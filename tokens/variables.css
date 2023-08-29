@@ -144,7 +144,7 @@
   --figma-light-elevation-7: [object Object],[object Object],[object Object];
   --figma-light-elevation-8: [object Object],[object Object],[object Object];
   --figma-light-elevation-outlined: [object Object];
-  --figma-light-test: #;
+  --figma-light-test: #232323;
   --figma-dark-spacing-scale: 2;
   --figma-dark-spacing-xs: 4;
   --figma-dark-spacing-sm: 4 * 2;
@@ -428,4 +428,5 @@
   --figma-opacity-low: 10%;
   --figma-opacity-md: 50%;
   --figma-opacity-high: 90%;
+  --figma-test: #232323;
 }
