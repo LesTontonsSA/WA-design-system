@@ -144,6 +144,7 @@
   --figma-light-elevation-7: [object Object],[object Object],[object Object];
   --figma-light-elevation-8: [object Object],[object Object],[object Object];
   --figma-light-elevation-outlined: [object Object];
+  --figma-light-test: #;
   --figma-dark-spacing-scale: 2;
   --figma-dark-spacing-xs: 4;
   --figma-dark-spacing-sm: 4 * 2;
