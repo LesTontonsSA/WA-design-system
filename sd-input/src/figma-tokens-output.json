@@ -978,6 +978,10 @@
         },
         "type": "boxShadow"
       }
+    },
+    "test": {
+      "value": "#",
+      "type": "color"
     }
   },
   "dark": {
