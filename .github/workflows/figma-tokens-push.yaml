@@ -1,6 +1,5 @@
 name: Create Tokens Studio for Figma PR
 
-# match the branch you put in your Tokens Studio for Figma sync credentials in the next step
 on:
   push:
     branches:
@@ -11,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
 
       - name: Create Pull Request
         uses: repo-sync/pull-request@v2

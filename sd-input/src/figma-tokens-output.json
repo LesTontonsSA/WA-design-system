@@ -978,6 +978,10 @@
         },
         "type": "boxShadow"
       }
+    },
+    "test": {
+      "value": "#121212",
+      "type": "color"
     }
   },
   "dark": {
