@@ -991,5 +991,9 @@
       "value": "90%",
       "type": "opacity"
     }
+  },
+  "test": {
+    "value": "#252525",
+    "type": "color"
   }
 }
