@@ -81,7 +81,7 @@ function ResponsiveDrawer_(props: Props) {
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
-          >
+            size="large">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">

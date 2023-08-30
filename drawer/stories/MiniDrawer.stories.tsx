@@ -116,7 +116,7 @@ function MiniDrawer_() {
               marginRight: '36px',
               ...(open && { display: 'none' }),
             }}
-          >
+            size="large">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
@@ -126,7 +126,7 @@ function MiniDrawer_() {
       </AppBar>
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={handleDrawerClose} size="large">
             {theme.direction === 'rtl' ? (
               <ChevronRightIcon />
             ) : (

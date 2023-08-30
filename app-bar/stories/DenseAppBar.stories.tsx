@@ -16,7 +16,7 @@ function DenseAppBar_() {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
-          >
+            size="large">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit" component="div">

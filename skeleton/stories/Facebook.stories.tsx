@@ -36,7 +36,7 @@ function Media(props: MediaProps) {
         }
         action={
           loading ? null : (
-            <IconButton aria-label="settings">
+            <IconButton aria-label="settings" size="large">
               <MoreVertIcon />
             </IconButton>
           )

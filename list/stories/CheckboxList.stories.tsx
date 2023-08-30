@@ -33,7 +33,7 @@ function CheckboxList_() {
           <ListItem
             key={value}
             secondaryAction={
-              <IconButton edge="end" aria-label="comments">
+              <IconButton edge="end" aria-label="comments" size="large">
                 <CommentIcon />
               </IconButton>
             }

@@ -11,7 +11,7 @@ import { useTheme } from '@mui/material';
 function ResponsiveDialog_() {
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+  const fullScreen = useMediaQuery(theme.breakpoints.down('lg'));
 
   const handleClickOpen = () => {
     setOpen(true);

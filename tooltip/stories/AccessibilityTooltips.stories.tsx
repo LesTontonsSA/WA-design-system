@@ -8,7 +8,7 @@ function AccessibilityTooltips_() {
   return (
     <div>
       <Tooltip title="Delete">
-        <IconButton>
+        <IconButton size="large">
           <DeleteIcon />
         </IconButton>
       </Tooltip>

@@ -29,17 +29,17 @@ function MediaControlCard_() {
           </Typography>
         </CardContent>
         <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-          <IconButton aria-label="previous">
+          <IconButton aria-label="previous" size="large">
             {theme.direction === 'rtl' ? (
               <SkipNextIcon />
             ) : (
               <SkipPreviousIcon />
             )}
           </IconButton>
-          <IconButton aria-label="play/pause">
+          <IconButton aria-label="play/pause" size="large">
             <PlayArrowIcon sx={{ height: 38, width: 38 }} />
           </IconButton>
-          <IconButton aria-label="next">
+          <IconButton aria-label="next" size="large">
             {theme.direction === 'rtl' ? (
               <SkipPreviousIcon />
             ) : (

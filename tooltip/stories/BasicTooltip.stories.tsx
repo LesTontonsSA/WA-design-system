@@ -6,7 +6,7 @@ import { Tooltip } from '~/tooltip';
 function BasicTooltip_() {
   return (
     <Tooltip title="Delete">
-      <IconButton>
+      <IconButton size="large">
         <DeleteIcon />
       </IconButton>
     </Tooltip>

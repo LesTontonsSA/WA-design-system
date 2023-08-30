@@ -6,11 +6,7 @@ import { Paper } from '~/paper';
 import { Typography } from '~/typography';
 import { Button } from '~/button';
 import { KeyboardArrowLeft } from '@mui/icons-material';
-import { KeyboardArrowRight } from '@mui/icons-material';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import { KeyboardArrowRight } from '@mui/icons';
 
 const images = [
   {
@@ -67,12 +63,7 @@ function SwipeableTextMobileStepper_() {
       >
         <Typography>{images[activeStep].label}</Typography>
       </Paper>
-      <AutoPlaySwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-      >
+      <Box>
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
@@ -91,7 +82,7 @@ function SwipeableTextMobileStepper_() {
             ) : null}
           </div>
         ))}
-      </AutoPlaySwipeableViews>
+      </Box>
       <MobileStepper
         steps={maxSteps}
         position="static"

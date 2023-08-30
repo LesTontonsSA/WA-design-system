@@ -15,7 +15,7 @@ function notificationsLabel(count: number) {
 
 function AccessibleBadges_() {
   return (
-    <IconButton aria-label={notificationsLabel(100)}>
+    <IconButton aria-label={notificationsLabel(100)} size="large">
       <Badge badgeContent={100} color="secondary">
         <MailIcon />
       </Badge>

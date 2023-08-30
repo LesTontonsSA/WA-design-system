@@ -1,5 +1,4 @@
 import * as React from 'react';
-import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material';
 import { AppBar } from '~/app-bar';
 import { Tabs } from '~/tabs';
@@ -69,11 +68,7 @@ function FullWidthTabs_() {
           <Tab label="Item Three" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
-      <SwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={value}
-        onChangeIndex={handleChangeIndex}
-      >
+      <Box>
         <TabPanel value={value} index={0} dir={theme.direction}>
           Item One
         </TabPanel>
@@ -83,7 +78,7 @@ function FullWidthTabs_() {
         <TabPanel value={value} index={2} dir={theme.direction}>
           Item Three
         </TabPanel>
-      </SwipeableViews>
+      </Box>
     </Box>
   );
 }

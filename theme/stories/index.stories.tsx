@@ -1,5 +1,7 @@
 import { createTheme } from '../src';
 
-export const light_theme = () => createTheme('light');
+import { adaptV4Theme } from '@mui/material/styles';
 
-export const dark_theme = () => createTheme('dark');
+export const light_theme = () => createTheme(adaptV4Theme('light'));
+
+export const dark_theme = () => createTheme(adaptV4Theme('dark'));

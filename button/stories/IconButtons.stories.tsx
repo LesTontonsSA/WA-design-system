@@ -8,16 +8,16 @@ import { AddShoppingCart as AddShoppingCartIcon } from '@mui/icons-material';
 function IconButtons_() {
   return (
     <Stack direction="row" spacing={1}>
-      <IconButton aria-label="delete">
+      <IconButton aria-label="delete" size="large">
         <DeleteIcon />
       </IconButton>
-      <IconButton aria-label="delete" disabled color="primary">
+      <IconButton aria-label="delete" disabled color="primary" size="large">
         <DeleteIcon />
       </IconButton>
-      <IconButton color="secondary" aria-label="add an alarm">
+      <IconButton color="secondary" aria-label="add an alarm" size="large">
         <AlarmIcon />
       </IconButton>
-      <IconButton color="primary" aria-label="add to shopping cart">
+      <IconButton color="primary" aria-label="add to shopping cart" size="large">
         <AddShoppingCartIcon />
       </IconButton>
     </Stack>

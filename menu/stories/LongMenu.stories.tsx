@@ -42,7 +42,7 @@ function LongMenu_() {
         aria-expanded={open ? 'true' : undefined}
         aria-haspopup="true"
         onClick={handleClick}
-      >
+        size="large">
         <MoreVertIcon />
       </IconButton>
       <Menu

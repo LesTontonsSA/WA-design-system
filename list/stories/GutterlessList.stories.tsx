@@ -13,7 +13,7 @@ function GutterlessList_() {
           key={value}
           disableGutters
           secondaryAction={
-            <IconButton>
+            <IconButton size="large">
               <CommentIcon />
             </IconButton>
           }

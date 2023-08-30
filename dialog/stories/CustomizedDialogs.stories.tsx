@@ -40,7 +40,7 @@ const BootstrapDialogTitle = (props: DialogTitleProps) => {
             top: 8,
             color: (theme) => theme.palette.grey[500],
           }}
-        >
+          size="large">
           <CloseIcon />
         </IconButton>
       ) : null}

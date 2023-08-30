@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 const Root = styled('div')(({ theme }) => ({
   width: '100%',
   padding: theme.spacing(1),
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('lg')]: {
     backgroundColor: theme.palette.secondary.main,
   },
   [theme.breakpoints.up('md')]: {
@@ -19,7 +19,7 @@ const Root = styled('div')(({ theme }) => ({
 }));
 
 const Text = styled('p')(({ theme }) => ({
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('lg')]: {
     color: theme.palette.secondary.contrastText,
   },
   [theme.breakpoints.up('md')]: {

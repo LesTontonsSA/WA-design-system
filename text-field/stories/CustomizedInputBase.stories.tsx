@@ -13,7 +13,7 @@ function CustomizedInputBase_() {
       component="form"
       sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
     >
-      <IconButton sx={{ p: '10px' }} aria-label="menu">
+      <IconButton sx={{ p: '10px' }} aria-label="menu" size="large">
         <MenuIcon />
       </IconButton>
       <InputBase
@@ -21,11 +21,11 @@ function CustomizedInputBase_() {
         placeholder="Search Google Maps"
         inputProps={{ 'aria-label': 'search google maps' }}
       />
-      <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
+      <IconButton type="submit" sx={{ p: '10px' }} aria-label="search" size="large">
         <SearchIcon />
       </IconButton>
       <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-      <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions">
+      <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions" size="large">
         <DirectionsIcon />
       </IconButton>
     </Paper>

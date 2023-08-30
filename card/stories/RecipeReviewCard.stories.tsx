@@ -21,7 +21,7 @@ interface ExpandMoreProps extends IconButtonProps {
 
 const ExpandMore = styled((props: ExpandMoreProps) => {
   const { expand, ...other } = props;
-  return <IconButton {...other} />;
+  return <IconButton {...other} size="large" />;
 })(({ theme, expand }) => ({
   transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
   marginLeft: 'auto',
@@ -46,7 +46,7 @@ function RecipeReviewCard_() {
           </Avatar>
         }
         action={
-          <IconButton aria-label="settings">
+          <IconButton aria-label="settings" size="large">
             <MoreVertIcon />
           </IconButton>
         }
@@ -67,10 +67,10 @@ function RecipeReviewCard_() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" size="large">
           <FavoriteIcon />
         </IconButton>
-        <IconButton aria-label="share">
+        <IconButton aria-label="share" size="large">
           <ShareIcon />
         </IconButton>
         <ExpandMore

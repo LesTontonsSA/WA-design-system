@@ -52,10 +52,7 @@ function CustomImageList_() {
               title={item.title}
               position="top"
               actionIcon={
-                <IconButton
-                  sx={{ color: 'white' }}
-                  aria-label={`star ${item.title}`}
-                >
+                <IconButton sx={{ color: 'white' }} aria-label={`star ${item.title}`} size="large">
                   <StarBorderIcon />
                 </IconButton>
               }

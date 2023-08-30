@@ -93,7 +93,7 @@ function PersistentDrawerLeft_() {
             onClick={handleDrawerOpen}
             edge="start"
             sx={{ mr: 2, ...(open && { display: 'none' }) }}
-          >
+            size="large">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
@@ -115,7 +115,7 @@ function PersistentDrawerLeft_() {
         open={open}
       >
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={handleDrawerClose} size="large">
             {theme.direction === 'ltr' ? (
               <ChevronLeftIcon />
             ) : (

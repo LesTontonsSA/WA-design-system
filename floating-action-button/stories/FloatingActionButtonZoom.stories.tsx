@@ -1,5 +1,4 @@
 import * as React from 'react';
-import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material';
 import { AppBar } from '~/app-bar';
 import { Tabs } from '~/tabs';
@@ -120,10 +119,7 @@ function FloatingActionButtonZoom_() {
           <Tab label="Item Three" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
-      <SwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={value}
-        onChangeIndex={handleChangeIndex}
+      <Box
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
           Item One
@@ -134,7 +130,7 @@ function FloatingActionButtonZoom_() {
         <TabPanel value={value} index={2} dir={theme.direction}>
           Item Three
         </TabPanel>
-      </SwipeableViews>
+      </Box>
       {fabs.map((fab, index) => (
         <Zoom
           key={fab.color}

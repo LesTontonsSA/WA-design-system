@@ -125,7 +125,7 @@ function InteractiveList_() {
               {generate(
                 <ListItem
                   secondaryAction={
-                    <IconButton edge="end" aria-label="delete">
+                    <IconButton edge="end" aria-label="delete" size="large">
                       <DeleteIcon />
                     </IconButton>
                   }

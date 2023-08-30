@@ -5,14 +5,24 @@ import rtlPlugin from 'stylis-plugin-rtl';
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import { StyleSheetManager } from 'styled-components';
-import { jssPreset, StylesProvider } from '@mui/styles';
+// import { jssPreset, StylesProvider } from '@mui/styles';
 import {
   useTheme,
   styled,
   createTheme,
   ThemeProvider,
+  Theme,
+  StyledEngineProvider,
+  adaptV4Theme,
 } from '@mui/material/styles';
 import rtl from 'jss-rtl';
+
+
+declare module '@mui/styles/defaultTheme' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
+
 
 const FramedDemo = (props) => {
   const { children, document } = props;
@@ -22,15 +32,15 @@ const FramedDemo = (props) => {
     document.body.dir = theme.direction;
   }, [document, theme.direction]);
 
-  const { jss, sheetsManager } = React.useMemo(() => {
-    return {
-      jss: create({
-        plugins: [...jssPreset().plugins, rtl()],
-        insertionPoint: document.head,
-      }),
-      sheetsManager: new Map(),
-    };
-  }, [document]);
+  // const { jss, sheetsManager } = React.useMemo(() => {
+  //   return {
+  //     jss: create({
+  //       plugins: [...jssPreset().plugins, rtl()],
+  //       insertionPoint: document.head,
+  //     }),
+  //     sheetsManager: new Map(),
+  //   };
+  // }, [document]);
 
   const cache = React.useMemo(
     () =>
@@ -46,7 +56,7 @@ const FramedDemo = (props) => {
   const getWindow = React.useCallback(() => document.defaultView, [document]);
 
   return (
-    <StylesProvider jss={jss} sheetsManager={sheetsManager}>
+    // <StylesProvider jss={jss} sheetsManager={sheetsManager}>
       <StyleSheetManager
         target={document.head}
         stylisPlugins={theme.direction === 'rtl' ? [rtlPlugin] : []}
@@ -57,7 +67,7 @@ const FramedDemo = (props) => {
           })}
         </CacheProvider>
       </StyleSheetManager>
-    </StylesProvider>
+    // </StylesProvider>
   );
 };
 
@@ -115,9 +125,9 @@ function Demo(props) {
 }
 
 const getTheme = (outerTheme) => {
-  const resultTheme = createTheme({
+  const resultTheme = createTheme(adaptV4Theme({
     palette: { mode: outerTheme.palette.mode || 'light' },
-  });
+  }));
 
   if (outerTheme.direction) resultTheme.direction = outerTheme.direction;
   if (outerTheme.spacing) resultTheme.spacing = outerTheme.spacing;
@@ -125,15 +135,17 @@ const getTheme = (outerTheme) => {
   return resultTheme;
 };
 
-const jss = create({
-  plugins: [...jssPreset().plugins, rtl()],
-  insertionPoint: document.querySelector('#insertion-point-jss') as any,
-});
+// const jss = create({
+//   plugins: [...jssPreset().plugins, rtl()],
+//   insertionPoint: document.querySelector('#insertion-point-jss') as any,
+// });
 
 export const DemoFrame = React.memo((props) => (
-  <StylesProvider jss={jss}>
-    <ThemeProvider theme={(outerTheme) => getTheme(outerTheme)}>
-      <Demo>{props.children}</Demo>
-    </ThemeProvider>
-  </StylesProvider>
+  // <StylesProvider jss={jss}>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={(outerTheme) => getTheme(outerTheme)}>
+        <Demo>{props.children}</Demo>
+      </ThemeProvider>
+    </StyledEngineProvider>
+  // </StylesProvider>
 ));

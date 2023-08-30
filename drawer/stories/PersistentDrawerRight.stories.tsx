@@ -96,7 +96,7 @@ function PersistentDrawerRight_() {
             edge="end"
             onClick={handleDrawerOpen}
             sx={{ ...(open && { display: 'none' }) }}
-          >
+            size="large">
             <MenuIcon />
           </IconButton>
         </Toolbar>
@@ -146,7 +146,7 @@ function PersistentDrawerRight_() {
         open={open}
       >
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={handleDrawerClose} size="large">
             {theme.direction === 'rtl' ? (
               <ChevronLeftIcon />
             ) : (
