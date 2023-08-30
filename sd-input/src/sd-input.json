@@ -1,14 +1,4 @@
 {
-  "tokenSetOrder": {
-    "0": {
-      "value": "light",
-      "type": "other"
-    },
-    "1": {
-      "value": "dark",
-      "type": "other"
-    }
-  },
   "spacing": {
     "scale": {
       "value": 2,
@@ -735,235 +725,67 @@
   },
   "Elevation": {
     "1": {
-      "value": [
-        {
-          "color": "#0000001f",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 1,
-          "blur": 3,
-          "spread": 0
-        },
-        {
-          "color": "#00000024",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 1,
-          "blur": 1,
-          "spread": 0
-        },
-        {
-          "color": "#00000033",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 2,
-          "blur": 1,
-          "spread": -1
-        }
-      ],
+      "value": {
+        "0": "[object Object]",
+        "1": "[object Object]",
+        "2": "[object Object]"
+      },
       "type": "boxShadow"
     },
     "2": {
-      "value": [
-        {
-          "color": "#0000001f",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 1,
-          "blur": 5,
-          "spread": 0
-        },
-        {
-          "color": "#00000024",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 2,
-          "blur": 2,
-          "spread": 0
-        },
-        {
-          "color": "#00000033",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 3,
-          "blur": 1,
-          "spread": -2
-        }
-      ],
+      "value": {
+        "0": "[object Object]",
+        "1": "[object Object]",
+        "2": "[object Object]"
+      },
       "type": "boxShadow"
     },
     "3": {
-      "value": [
-        {
-          "color": "#0000001f",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 1,
-          "blur": 8,
-          "spread": 0
-        },
-        {
-          "color": "#00000024",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 3,
-          "blur": 4,
-          "spread": 0
-        },
-        {
-          "color": "#00000033",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 3,
-          "blur": 3,
-          "spread": -2
-        }
-      ],
+      "value": {
+        "0": "[object Object]",
+        "1": "[object Object]",
+        "2": "[object Object]"
+      },
       "type": "boxShadow"
     },
     "4": {
-      "value": [
-        {
-          "color": "#0000001f",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 1,
-          "blur": 10,
-          "spread": 0
-        },
-        {
-          "color": "#00000024",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 4,
-          "blur": 5,
-          "spread": 0
-        },
-        {
-          "color": "#00000033",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 2,
-          "blur": 4,
-          "spread": -1
-        }
-      ],
+      "value": {
+        "0": "[object Object]",
+        "1": "[object Object]",
+        "2": "[object Object]"
+      },
       "type": "boxShadow"
     },
     "5": {
-      "value": [
-        {
-          "color": "#0000001f",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 1,
-          "blur": 14,
-          "spread": 0
-        },
-        {
-          "color": "#00000024",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 5,
-          "blur": 8,
-          "spread": 0
-        },
-        {
-          "color": "#00000033",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 3,
-          "blur": 5,
-          "spread": -1
-        }
-      ],
+      "value": {
+        "0": "[object Object]",
+        "1": "[object Object]",
+        "2": "[object Object]"
+      },
       "type": "boxShadow"
     },
     "6": {
-      "value": [
-        {
-          "color": "#0000001f",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 1,
-          "blur": 18,
-          "spread": 0
-        },
-        {
-          "color": "#00000024",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 6,
-          "blur": 10,
-          "spread": 0
-        },
-        {
-          "color": "#00000033",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 3,
-          "blur": 5,
-          "spread": -1
-        }
-      ],
+      "value": {
+        "0": "[object Object]",
+        "1": "[object Object]",
+        "2": "[object Object]"
+      },
       "type": "boxShadow"
     },
     "7": {
-      "value": [
-        {
-          "color": "#0000001f",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 2,
-          "blur": 16,
-          "spread": 1
-        },
-        {
-          "color": "#00000024",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 7,
-          "blur": 10,
-          "spread": 1
-        },
-        {
-          "color": "#00000033",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 4,
-          "blur": 5,
-          "spread": -2
-        }
-      ],
+      "value": {
+        "0": "[object Object]",
+        "1": "[object Object]",
+        "2": "[object Object]"
+      },
       "type": "boxShadow"
     },
     "8": {
-      "value": [
-        {
-          "color": "#0000001f",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 3,
-          "blur": 14,
-          "spread": 2
-        },
-        {
-          "color": "#00000024",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 8,
-          "blur": 10,
-          "spread": 1
-        },
-        {
-          "color": "#00000033",
-          "type": "dropShadow",
-          "x": 0,
-          "y": 5,
-          "blur": 5,
-          "spread": -3
-        }
-      ],
+      "value": {
+        "0": "[object Object]",
+        "1": "[object Object]",
+        "2": "[object Object]"
+      },
       "type": "boxShadow"
     },
     "outlined": {
@@ -993,7 +815,17 @@
     }
   },
   "test": {
-    "value": "#252525",
+    "value": "#303030",
     "type": "color"
+  },
+  "tokenSetOrder": {
+    "0": {
+      "value": "light",
+      "type": "other"
+    },
+    "1": {
+      "value": "dark",
+      "type": "other"
+    }
   }
 }
