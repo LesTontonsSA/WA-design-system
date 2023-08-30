@@ -144,7 +144,7 @@
   --figma-light-elevation-7: [object Object],[object Object],[object Object];
   --figma-light-elevation-8: [object Object],[object Object],[object Object];
   --figma-light-elevation-outlined: [object Object];
-  --figma-light-test: #;
+  --figma-light-test: #303030;
   --figma-dark-spacing-scale: 2;
   --figma-dark-spacing-xs: 4;
   --figma-dark-spacing-sm: 4 * 2;
@@ -284,8 +284,6 @@
   --figma-dark-elevation-7: [object Object],[object Object],[object Object];
   --figma-dark-elevation-8: [object Object],[object Object],[object Object];
   --figma-dark-elevation-outlined: [object Object];
-  --figma-token-set-order-0: light;
-  --figma-token-set-order-1: dark;
   --figma-spacing-scale: 2;
   --figma-spacing-xs: 4;
   --figma-spacing-sm: 4 * 2;
@@ -416,16 +414,19 @@
   --figma-text-case-uppercase: uppercase;
   --figma-text-case-none: none;
   --figma-text-decoration-none: none;
-  --figma-elevation-1: [object Object],[object Object],[object Object];
-  --figma-elevation-2: [object Object],[object Object],[object Object];
-  --figma-elevation-3: [object Object],[object Object],[object Object];
-  --figma-elevation-4: [object Object],[object Object],[object Object];
-  --figma-elevation-5: [object Object],[object Object],[object Object];
-  --figma-elevation-6: [object Object],[object Object],[object Object];
-  --figma-elevation-7: [object Object],[object Object],[object Object];
-  --figma-elevation-8: [object Object],[object Object],[object Object];
+  --figma-elevation-1: [object Object];
+  --figma-elevation-2: [object Object];
+  --figma-elevation-3: [object Object];
+  --figma-elevation-4: [object Object];
+  --figma-elevation-5: [object Object];
+  --figma-elevation-6: [object Object];
+  --figma-elevation-7: [object Object];
+  --figma-elevation-8: [object Object];
   --figma-elevation-outlined: [object Object];
   --figma-opacity-low: 10%;
   --figma-opacity-md: 50%;
   --figma-opacity-high: 90%;
+  --figma-test: #303030;
+  --figma-token-set-order-0: light;
+  --figma-token-set-order-1: dark;
 }
