@@ -1,5 +1,5 @@
 {
-  "name": "@divriots/starter-bricks",
+  "name": "@backlight-dev/historical-wilderness-vha64.bricks-llxh35m8",
   "version": "0.0.0",
   "description": "",
   "license": "MIT",
@@ -43,15 +43,10 @@
     "stylis-plugin-rtl": "^2.1.1"
   },
   "devDependencies": {
-    "token-transformer": "^0.0.23",
-    "style-dictionary": "^3.7.0",
     "@divriots/dockit-react": "^0.0.84",
-    "@mdx-js/react": "^1.6.22",
     "@tailwindcss/typography": "^0.4.1",
+    "@mdx-js/react": "^1.6.22",
     "deepmerge": "^4.2.2",
     "prettier": "^2.4.1"
-  },
-  "volta": {
-    "node": "16.20.2"
   }
 }
