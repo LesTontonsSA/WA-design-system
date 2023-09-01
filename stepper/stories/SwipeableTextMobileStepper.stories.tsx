@@ -6,7 +6,7 @@ import { Paper } from '~/paper';
 import { Typography } from '~/typography';
 import { Button } from '~/button';
 import { KeyboardArrowLeft } from '@mui/icons-material';
-import { KeyboardArrowRight } from '@mui/icons';
+import { KeyboardArrowRight } from '@mui/icons-material';
 
 const images = [
   {
