@@ -40,7 +40,7 @@
         ]
       ],
       ["feedback", ["alert", "backdrop", "dialog", "progress", "skeleton"]],
-      ["surfaces", ["accordion", "app-bar", "card", "paper"]],
+      ["surfaces", ["accordion", "app-bar", "card", "paper", "gdpr-banner"]],
       [
         "navigation",
         [
